@@ -1,0 +1,91 @@
+
+.roboto-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" <width>;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  header{
+    background-color: #24252a;
+    box-shadow: 0 3px 10px #464646;
+  }
+  .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo h1{
+    color: #fff;
+  }
+  .nav-list{
+    display: flex;
+    align-items: center;
+  }
+  .nav-list ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+.nav-item{
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-item:hover{
+    color: #f5f5f5;
+  }
+  .nav-list ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-list ul li a:hover{
+    color: #f5f5f5;
+  }
+  .nav-list ul li a.active{
+    color: #f5f5f5;
+  }
+  .nav-list ul li a.active:hover{
+    color: #fff;
+  }
+  .hamburger{
+    display: none;
+  }
+.login-button button{
+    background-color: #f5f5f5;
+    color: #24252a;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .login-button button:hover{
+    background-color: #24252a;
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    .nav-list{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+      cursor: pointer;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
